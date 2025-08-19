@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "cover": "https://i.ibb.co.com/9kMQymdv/1.jpg",
+    "title": "The Hidden Horizon",
+    "author": "Emily Carter",
+    "author_img": "https://i.ibb.co.com/g5Pqxc8/boy2.jpg",
+    "posted_date": "2025-07-15",
+    "reading_time": 8,
+    "hashtags": ["#inspiration", "#lifestyle", "#mindset"]
+  },
+  {
+    "id": 2,
+    "cover": "https://i.ibb.co.com/Kc11CV78/2.png",
+    "title": "Journey Beyond The Stars",
+    "author": "Daniel Smith",
+    "author_img": "https://i.ibb.co.com/1G53nChR/girl1.jpg",
+    "posted_date": "2025-06-22",
+    "reading_time": 14,
+    "hashtags": ["#science", "#space", "#future"]
+  },
+  {
+    "id": 3,
+    "cover": "https://i.ibb.co.com/chM30Ggw/3.png",
+    "title": "Whispers of the Ocean",
+    "author": "Sophia Lee",
+    "author_img": "https://i.ibb.co.com/5W65cwk7/girl2.jpg",
+    "posted_date": "2025-08-05",
+    "reading_time": 12,
+    "hashtags": ["#travel", "#adventure", "#ocean"]
+  },
+  {
+    "id": 4,
+    "cover": "https://i.ibb.co.com/nN42Gxdq/4.jpg",
+    "title": "Code & Creativity",
+    "author": "Michael Johnson",
+    "author_img": "https://i.ibb.co.com/tpmYFkPp/boy1.png",
+    "posted_date": "2025-07-30",
+    "reading_time": 28,
+    "hashtags": ["#coding", "#design", "#innovation"]
+  }
+
+]
+
