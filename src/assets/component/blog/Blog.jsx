@@ -1,6 +1,6 @@
 import { PiBookmarkSimple } from "react-icons/pi";
 
-const Blog = ({ blog , handleAddToBookmarks}) => {
+const Blog = ({ blog , handleAddToBookmarks, handleMarkAsRead}) => {
     
   const {
     cover,
@@ -36,6 +36,7 @@ const Blog = ({ blog , handleAddToBookmarks}) => {
                     hashtags.map(hash => <span><a className="mr-2" href="">{hash}</a></span>)
                 }
             </p>
+            <button className="font-bold text-purple-600 underline" onClick={()=>handleMarkAsRead(reading_time)}>Mark As Read</button>
         </div>
     </div>
   );
