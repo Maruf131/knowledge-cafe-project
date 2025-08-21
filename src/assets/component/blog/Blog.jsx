@@ -1,4 +1,7 @@
-const Blog = ({ blog }) => {
+import { PiBookmarkSimple } from "react-icons/pi";
+
+const Blog = ({ blog , handleAddToBookmarks}) => {
+    
   const {
     cover,
     title,
@@ -21,8 +24,9 @@ const Blog = ({ blog }) => {
             </p>
           </div>
         </div>
-        <div>
-          <span className="text-gray-600">{reading_time} min ago</span>
+        <div className="flex item-center gap-3">
+          <span className="text-gray-600">{reading_time} min ago </span>
+          <button onClick={()=> handleAddToBookmarks(blog)} className="text-2xl}"><PiBookmarkSimple></PiBookmarkSimple></button>
         </div>
       </div>
         <div className="mt-3">
