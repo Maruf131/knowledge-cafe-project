@@ -7,9 +7,13 @@ import Header from "./assets/component/header/Header";
 function App() {
   const [bookMarks, setBookMarks]= useState([]);
   const [readingTime, setReadingTime] = useState(0);
-  const handleMarkAsRead = time =>{
+
+  const handleMarkAsRead = (time, id) =>{
     const newReadingTime = readingTime + time ;
     setReadingTime(newReadingTime)
+
+    const remainingBookMarks = bookMarks.filter(bookmark => bookmark.id !== id);
+    setBookMarks(remainingBookMarks);
     
   }
 
