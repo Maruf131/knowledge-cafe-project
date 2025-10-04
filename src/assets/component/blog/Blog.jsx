@@ -1,6 +1,12 @@
+import { useState } from "react";
 import { PiBookmarkSimple } from "react-icons/pi";
 
 const Blog = ({ blog , handleAddToBookmarks, handleMarkAsRead}) => {
+  const [isActive, setIsActive] = useState(false);
+  const handleBookMark = () =>{
+    setIsActive(!isActive)
+    handleAddToBookmarks(blog)
+  }
     
   const {
     cover,
@@ -27,7 +33,7 @@ const Blog = ({ blog , handleAddToBookmarks, handleMarkAsRead}) => {
         </div>
         <div className="flex item-center gap-3">
           <span className="text-gray-600">{reading_time} min ago </span>
-          <button onClick={()=> handleAddToBookmarks(blog)} className="text-2xl}"><PiBookmarkSimple></PiBookmarkSimple></button>
+          <button onClick={handleBookMark} className="text-2xl"><PiBookmarkSimple className={isActive && 'bg-green-800'}></PiBookmarkSimple></button>
         </div>
       </div>
         <div className="mt-3">
